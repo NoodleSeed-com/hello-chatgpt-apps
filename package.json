@@ -1,0 +1,36 @@
+{
+  "name": "noodleseed-chatgpt-app",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "NoodleSeed ChatGPT App - Node.js/TypeScript MCP Server",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "tsx src/server.ts",
+    "build:widgets": "npm run build:widget:platform && npm run build:widget:list && npm run build:widget:carousel",
+    "build:widget:platform": "npx @fractal-mcp/cli bundle --entrypoint=./ui/NoodleSeedPlatform.tsx --out=./dist/noodleseed-platform-temp.html && cp dist/noodleseed-platform-temp.html/index.html dist/noodleseed-platform.html && rm -rf dist/noodleseed-platform-temp.html",
+    "build:widget:list": "npx @fractal-mcp/cli bundle --entrypoint=./ui/NoodleSeedList.tsx --out=./dist/noodleseed-list-temp.html && cp dist/noodleseed-list-temp.html/index.html dist/noodleseed-list.html && rm -rf dist/noodleseed-list-temp.html",
+    "build:widget:carousel": "npx @fractal-mcp/cli bundle --entrypoint=./ui/NoodleSeedCarousel.tsx --out=./dist/noodleseed-carousel-temp.html && cp dist/noodleseed-carousel-temp.html/index.html dist/noodleseed-carousel.html && rm -rf dist/noodleseed-carousel-temp.html",
+    "build": "npm run build:widgets",
+    "dev": "tsx watch src/server.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@fractal-mcp/cli": "^2.0.6",
+    "@types/node": "^20.10.0",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^5.0.4",
+    "concurrently": "^9.2.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vite": "^7.1.10"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

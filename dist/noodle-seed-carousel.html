@@ -1,0 +1,136 @@
+<div id="noodle-seed-carousel-root"></div>
+<style>
+  #noodle-seed-carousel-root {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .carousel-container {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    padding: 24px;
+    color: white;
+  }
+  .carousel-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .feature-card {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+  }
+  .feature-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+  .feature-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .feature-description {
+    font-size: 14px;
+    opacity: 0.95;
+    line-height: 1.6;
+  }
+  .cta-section {
+    text-align: center;
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .cta-text {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .cta-subtext {
+    font-size: 14px;
+    opacity: 0.9;
+  }
+</style>
+<script>
+(function() {
+  const root = document.getElementById('noodle-seed-carousel-root');
+  root.innerHTML = `
+    <div class="carousel-container">
+      <div class="carousel-header">Why Choose NoodleSeed?</div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <div class="feature-title">Massive Reach</div>
+          <div class="feature-description">
+            Connect with 800 million people using AI assistants daily.
+            Be where your customers are searching.
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <div class="feature-title">Lightning Fast Setup</div>
+          <div class="feature-description">
+            Launch your AI presence in minutes, not months.
+            No coding required - just configure and publish.
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔗</div>
+          <div class="feature-title">Multi-Platform</div>
+          <div class="feature-description">
+            One platform, everywhere. Deploy to ChatGPT, Claude,
+            Perplexity, and Gemini with a single click.
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <div class="feature-title">Lead Capture</div>
+          <div class="feature-description">
+            Automatically collect customer inquiries, appointments,
+            and transactions through intelligent forms.
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <div class="feature-title">Secure & Compliant</div>
+          <div class="feature-description">
+            SOC 2 and GDPR compliance in progress.
+            Your data and your customers' data are protected.
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">💰</div>
+          <div class="feature-title">Launch Discount</div>
+          <div class="feature-description">
+            75% off all plans during launch period.
+            Lock in your savings with 30-day money-back guarantee.
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-section">
+        <div class="cta-text">Ready to Build Your AI Presence?</div>
+        <div class="cta-subtext">
+          Visit noodle-seed.com to get started |
+          Follow us on LinkedIn: linkedin.com/company/noodle-seed
+        </div>
+      </div>
+    </div>
+  `;
+})();
+</script>

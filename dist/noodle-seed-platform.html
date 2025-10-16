@@ -1,0 +1,107 @@
+<div id="noodle-seed-root"></div>
+<style>
+  #noodle-seed-root {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    padding: 24px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  }
+  h1 {
+    color: #667eea;
+    margin-bottom: 8px;
+    font-size: 32px;
+    margin: 0;
+  }
+  .tagline {
+    color: #764ba2;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+  h2 {
+    color: #333;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 20px;
+  }
+  p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 16px;
+  }
+  ul {
+    color: #666;
+    line-height: 1.8;
+    margin-left: 20px;
+    margin-bottom: 16px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  .price {
+    background: #f0f7ff;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 16px 0;
+  }
+  .price strong {
+    color: #667eea;
+    font-size: 24px;
+  }
+  .contact {
+    background: #f9f9f9;
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 24px;
+  }
+  .contact p {
+    margin-bottom: 8px;
+  }
+</style>
+<script>
+(function() {
+  const root = document.getElementById('noodle-seed-root');
+  root.innerHTML = `
+    <div class="card">
+      <h1>NoodleSeed</h1>
+      <p class="tagline">Build Your AI Presence in Minutes</p>
+
+      <p>Transform your business with intelligent automation and reach 800 million people asking AI every day.</p>
+
+      <h2>Key Features</h2>
+      <ul>
+        <li>ChatGPT Presence - Reach customers where they search</li>
+        <li>No Code Required - Launch in minutes, not months</li>
+        <li>Lead Capture Forms - Collect inquiries automatically</li>
+        <li>One-Click Publishing - Deploy across AI platforms instantly</li>
+        <li>Built on MCP - AI interoperability standard</li>
+      </ul>
+
+      <h2>Pricing</h2>
+      <div class="price">
+        <p>Core Platform: <strong>$10/month</strong> (75% launch discount)</p>
+        <p style="color: #999; font-size: 14px;">Regular price: $40/month</p>
+      </div>
+
+      <p><strong>Add-ons Available:</strong></p>
+      <ul>
+        <li>Appointments: $12.25/month (75% off)</li>
+        <li>Transactions: $24.75/month (75% off)</li>
+      </ul>
+
+      <div class="contact">
+        <h2 style="margin-top: 0;">Get Started</h2>
+        <p><strong>Website:</strong> noodle-seed.com</p>
+        <p><strong>LinkedIn:</strong> linkedin.com/company/noodle-seed</p>
+        <p><strong>YouTube:</strong> youtube.com/@noodleseed</p>
+      </div>
+    </div>
+  `;
+})();
+</script>

@@ -1,0 +1,88 @@
+<div id="noodle-seed-list-root"></div>
+<style>
+  #noodle-seed-list-root {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .list-container {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    padding: 24px;
+    color: white;
+  }
+  .list-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .service-item {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    backdrop-filter: blur(10px);
+  }
+  .service-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .service-description {
+    font-size: 14px;
+    opacity: 0.95;
+    margin-bottom: 8px;
+  }
+  .service-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffd700;
+  }
+</style>
+<script>
+(function() {
+  const root = document.getElementById('noodle-seed-list-root');
+  root.innerHTML = `
+    <div class="list-container">
+      <div class="list-header">NoodleSeed Services</div>
+
+      <div class="service-item">
+        <div class="service-title">Core Platform</div>
+        <div class="service-description">
+          Complete AI presence across ChatGPT, Claude, Perplexity, and Gemini.
+          Includes business profile, lead capture forms, and one-click publishing.
+        </div>
+        <div class="service-price">$10/month (75% off - Regular: $40)</div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-title">Appointments Add-on</div>
+        <div class="service-description">
+          Calendar integration with real-time availability, automated scheduling,
+          booking confirmations, and reminder notifications.
+        </div>
+        <div class="service-price">$12.25/month (75% off - Regular: $49)</div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-title">Transactions Add-on</div>
+        <div class="service-description">
+          Secure payment processing with multiple payment methods, transaction history,
+          automated receipts, and revenue analytics.
+        </div>
+        <div class="service-price">$24.75/month (75% off - Regular: $99)</div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-title">Enterprise Package</div>
+        <div class="service-description">
+          All features included: Core Platform + Appointments + Transactions.
+          Best value for growing businesses.
+        </div>
+        <div class="service-price">$47/month (75% off - Regular: $188)</div>
+      </div>
+    </div>
+  `;
+})();
+</script>
